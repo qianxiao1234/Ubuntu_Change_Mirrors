@@ -10,3 +10,10 @@ wget -O ucm.sh https://raw.githubusercontent.com/qianxiao1234/Ubuntu_Change_Mirr
 chmod 777 ucm.sh
 sudo ./ucm.sh
 ```
+## 国内用户请使用
+```sh
+wget -O ucm.sh https://gitee.com/qianxiao1234/Ubuntu_Change_Mirrors/raw/main/ucm.sh
+chmod 777 ucm.sh
+sudo ./ucm.sh
+```
+```
