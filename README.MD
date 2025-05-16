@@ -16,4 +16,3 @@ wget -O ucm.sh https://gitee.com/qianxiao1234/Ubuntu_Change_Mirrors/raw/main/ucm
 chmod 777 ucm.sh
 sudo ./ucm.sh
 ```
-```
