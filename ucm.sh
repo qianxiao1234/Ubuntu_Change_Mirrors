@@ -37,6 +37,7 @@ if [ "$OS_NAME" = "Ubuntu" ]; then
     echo "正在判断系统版本"
 else
     echo "该系统不是 Ubuntu"
+    exit 1
 fi
 
 # 判断软件源是否为DEB822格式
