@@ -5,7 +5,7 @@ echo "该脚本正在测试中，如若继续使用后出现的任何问题均�
 
 # 判断是否为root用户
 if [ $(id -u) != "0" ]; then
-    echo "请使用root用户运行此脚本！"
+    echo "请使用 root 权限运行此脚本: sudo ./ucm.sh"
     exit 1
 fi
 
@@ -49,9 +49,9 @@ if [ -f "/etc/apt/sources.list.d/ubuntu.sources" ]; then
     else
         cp /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources.bak
         echo "已创建备份文件 /etc/apt/sources.list.d/ubuntu.sources.bak"
+    fi
     sed -i 's#^URIs: .*#URIs: https://mirrors.ustc.edu.cn/ubuntu/#' /etc/apt/sources.list.d/ubuntu.sources
     echo "执行完毕！"
-    fi
 else
     echo "未检测到sources文件，将使用传统方式替换"
     # 创建备份文件
